@@ -9,7 +9,11 @@ def summon_captain_planet(array)
 end
 
 def long_planeteer_calls(array)
-  array.none? {|element| element.length <= 4 }
+  while array.include? {|element| element.length >= 4}
+    true
+  while array.none? {|element| element.length >= 4}
+    false
+  end
 end
 
 def find_the_cheese# code an argument here
