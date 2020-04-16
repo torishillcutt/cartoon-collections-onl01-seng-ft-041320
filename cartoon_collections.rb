@@ -13,7 +13,7 @@ def long_planeteer_calls(array)
 end
 
 def find_the_cheese(array)
-  array.detect{|element| element == "cheddar" || element == "gouda" || element == "camembert"}
+  array.detect{|element| element.is_a?("cheddar", "gouda", "camembert")}
 
   cheese_types = ["cheddar", "gouda", "camembert"]
 end
