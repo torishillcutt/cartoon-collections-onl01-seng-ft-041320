@@ -10,7 +10,7 @@ end
 
 def long_planeteer_calls(array)
 while array.any? {|element| element.length >= 4}
-  true  
+  true
 while array.none? {|element| element.length >= 4}
    false
 end
